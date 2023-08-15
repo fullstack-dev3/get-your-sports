@@ -1,0 +1,81 @@
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+body {
+  background-color: #EDF5F4;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ECF0F1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header .logo {
+  color: black;
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
+  font-weight: 800;
+  margin-left: 60px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  margin-right: 60px;
+}
+
+.header li:hover {
+  animation: shake 0.5s infinite;
+}
+
+.header li .menuitem {
+  color: black;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 30px;
+  text-decoration: none;
+  transition: 2s;
+}
+
+.header li .menuitem.active {
+  border-bottom: 2px solid red;
+}
+
+.header li .menuitem:hover {
+  border-bottom:2px solid red;
+}
+
+.banner {
+  background-color: grey;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.banner i {
+  color: orange;
+  font-size: 80px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+}
+
+.banner i:hover{
+	color:white;
+}
