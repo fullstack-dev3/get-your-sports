@@ -12,6 +12,16 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 body {
   background-color: #EDF5F4;
   margin: 0;
@@ -59,6 +69,80 @@ body {
 
 .header li .menuitem:hover {
   border-bottom:2px solid red;
+}
+
+.slideshow {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.slideshow .slide {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  display: none;
+}
+
+.slideshow .slide:first-child {
+  display: block;
+}
+
+.slideshow .slide img {
+  height: calc(100vh - 130px);
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
+
+.slideshow .prev, .slideshow .next {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  transition: 0.6s ease;
+  width: auto;
+}
+
+.slideshow .prev {
+  border-radius: 0 3px 3px 0;
+  left: 0;
+}
+
+.slideshow .next {
+  border-radius: 3px 0 0 3px;
+  right: 0;
+}
+
+.slideshow .prev:hover, .slideshow .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow .control {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.slideshow .control .dot {
+  background-color: #BBB;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 15px;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+  width: 15px;
+}
+
+.slideshow .control .dot:hover {
+  background-color: #717171;
+}
+
+.slideshow .control .dot.active {
+  background-color: #717171;
+  border: 2px solid red;
 }
 
 .banner {
