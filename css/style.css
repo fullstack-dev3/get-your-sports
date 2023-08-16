@@ -172,6 +172,35 @@ body {
   text-align: center;
 }
 
+.more {
+  background-color: black;
+  border-top: 10px solid red;
+  height: 270px;
+  width: 100%;
+}
+
+.more .title {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 70px;
+  text-align: center;
+  word-spacing: 10px;
+}
+
+.more .btn {
+  background-color: black;
+  border: 5px solid red;
+  border-radius: 50px;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  margin-left: 500px;
+  padding: 11px;
+  width: 600px;
+}
+
 .banner {
   background-color: grey;
   padding-bottom: 10px;
