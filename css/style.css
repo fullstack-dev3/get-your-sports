@@ -145,6 +145,33 @@ body {
   border: 2px solid red;
 }
 
+.sports {
+  border-radius: 10px;
+  cursor:pointer;
+  margin-bottom: 10px;
+}
+
+.sports:hover {
+  animation: shake 0.5s infinite;
+  box-shadow:5px 5px 20px black;
+}
+
+.sports img {
+  border-radius: 20px 0 20px 0;
+  height: 180px;
+  margin-top: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.sports h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  text-align: center;
+}
+
 .banner {
   background-color: grey;
   padding-bottom: 10px;
