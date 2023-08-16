@@ -11,87 +11,89 @@
     <div class="header py-2">
       <span class="logo">Get your Sports</span>
       <ul>
-        <li><a class="menuitem active" href="">Club</a></li>
+        <li><a class="menuitem active" href="#home">Club</a></li>
         <li><a class="menuitem" href="#more">More</a></li>
         <li><a class="menuitem" href="#about">About Us</a><li>
         <li><a class="menuitem" href="#contact">Contact us</a></li>
       </ul>
     </div>
 
-    <div class="slideshow">
-      <div class="slide" style="display: block;">
-        <img src="images/slide1.jpg">
+    <div id="home">
+      <div class="slideshow">
+        <div class="slide" style="display: block;">
+          <img src="images/slide1.jpg">
+        </div>
+        <div class="slide">
+          <img src="images/slide2.jpg">
+        </div>
+        <div class="slide">
+          <img src="images/slide3.jpg">
+        </div>
+        <div class="slide">
+          <img src="images/slide4.jpg">
+        </div>
+  
+        <a class="prev" onclick="slide(-1)">&#10094;</a>
+        <a class="next" onclick="slide(1)">&#10095;</a>
+  
+        <div class="control">
+          <span class="dot active" onclick="control(1)"></span>
+          <span class="dot" onclick="control(2)"></span>
+          <span class="dot" onclick="control(3)"></span>
+          <span class="dot" onclick="control(4)"></span>
+        </div>
       </div>
-      <div class="slide">
-        <img src="images/slide2.jpg">
-      </div>
-      <div class="slide">
-        <img src="images/slide3.jpg">
-      </div>
-      <div class="slide">
-        <img src="images/slide4.jpg">
-      </div>
-
-      <a class="prev" onclick="slide(-1)">&#10094;</a>
-      <a class="next" onclick="slide(1)">&#10095;</a>
-
-      <div class="control">
-        <span class="dot active" onclick="control(1)"></span>
-        <span class="dot" onclick="control(2)"></span>
-        <span class="dot" onclick="control(3)"></span>
-        <span class="dot" onclick="control(4)"></span>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/cycle.jpg" /><h1>Cycling</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/basketball.jpg" /><h1> Basketball</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/iceskating.jpg" /><h1>Ice Skating</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/horse.jpg" /><h1>Horse Riding</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/volleyball.jpg" /><h1>Volleyball</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/kabadi.jpg" /><h1>Khel Khabadi</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/snowship.jpg" /><h1>Snow Race</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/tennis.jpg" /><h1>Tennis</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/running.jpg" /><h1>Running</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/archery.jpg" /><h1>Archery</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/hockey.jpg" /><h1>Hockey</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/football.jpg" /><h1>Football</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/judo.jpg" /><h1>Judo</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/swimming.jpg" /><h1>Swimming</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/waterpool.jpg" /><h1>WaterPool</h1>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 sports">
-          <img src="images/masthead.jpg" /><h1>Masthead Racing</h1>
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/cycle.jpg" /><h1>Cycling</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/basketball.jpg" /><h1> Basketball</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/iceskating.jpg" /><h1>Ice Skating</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/horse.jpg" /><h1>Horse Riding</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/volleyball.jpg" /><h1>Volleyball</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/kabadi.jpg" /><h1>Khel Khabadi</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/snowship.jpg" /><h1>Snow Race</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/tennis.jpg" /><h1>Tennis</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/running.jpg" /><h1>Running</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/archery.jpg" /><h1>Archery</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/hockey.jpg" /><h1>Hockey</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/football.jpg" /><h1>Football</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/judo.jpg" /><h1>Judo</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/swimming.jpg" /><h1>Swimming</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/waterpool.jpg" /><h1>WaterPool</h1>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 sports">
+            <img src="images/masthead.jpg" /><h1>Masthead Racing</h1>
+          </div>
         </div>
       </div>
     </div>
